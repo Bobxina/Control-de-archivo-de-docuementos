@@ -9,16 +9,17 @@ Public Class conexion
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+        Return Err()
     End Function
     Protected Function desconecta()
         Try
             If cone.State = ConnectionState.Open Then
                 cone.Close()
-
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+        Return Err()
     End Function
 
 End Class
