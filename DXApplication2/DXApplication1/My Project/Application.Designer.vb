@@ -32,8 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Control_de_archivo_de_docuementos.SplashScreen1
-
+            Me.MainForm = Global.DXApplication1.Form1
         End Sub
     End Class
 End Namespace

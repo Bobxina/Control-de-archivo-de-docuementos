@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class SplashScreen1
-    Inherits System.Windows.Forms.Form
+    Inherits DevExpress.XtraSplashScreen.SplashScreen
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -18,80 +18,96 @@ Partial Class SplashScreen1
     Private components As System.ComponentModel.IContainer
 
     'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
+    'It can be modified using the Windows Form Designer.
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Me.ApplicationTitle = New System.Windows.Forms.Label()
-        Me.Copyright = New System.Windows.Forms.Label()
-        Me.Version = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashScreen1))
+        Me.pictureEdit2 = New DevExpress.XtraEditors.PictureEdit
+        Me.pictureEdit1 = New DevExpress.XtraEditors.PictureEdit
+        Me.labelControl2 = New DevExpress.XtraEditors.LabelControl
+        Me.labelControl1 = New DevExpress.XtraEditors.LabelControl
+        Me.marqueeProgressBarControl1 = New DevExpress.XtraEditors.MarqueeProgressBarControl
+        CType(Me.pictureEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pictureEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.marqueeProgressBarControl1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ApplicationTitle
+        'pictureEdit2
         '
-        Me.ApplicationTitle.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ApplicationTitle.BackColor = System.Drawing.Color.Transparent
-        Me.ApplicationTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ApplicationTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ApplicationTitle.Location = New System.Drawing.Point(272, 9)
-        Me.ApplicationTitle.Name = "ApplicationTitle"
-        Me.ApplicationTitle.Size = New System.Drawing.Size(394, 41)
-        Me.ApplicationTitle.TabIndex = 3
-        Me.ApplicationTitle.Text = "Application Title"
-        Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.pictureEdit2.Cursor = System.Windows.Forms.Cursors.Default
+        Me.pictureEdit2.EditValue = CType(resources.GetObject("pictureEdit2.EditValue"), Object)
+        Me.pictureEdit2.Location = New System.Drawing.Point(12, 12)
+        Me.pictureEdit2.Name = "pictureEdit2"
+        Me.pictureEdit2.Properties.AllowFocused = False
+        Me.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.pictureEdit2.Properties.Appearance.Options.UseBackColor = True
+        Me.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.pictureEdit2.Properties.ShowMenu = False
+        Me.pictureEdit2.Size = New System.Drawing.Size(426, 180)
+        Me.pictureEdit2.TabIndex = 14
         '
-        'Copyright
+        'pictureEdit1
         '
-        Me.Copyright.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Copyright.BackColor = System.Drawing.Color.Transparent
-        Me.Copyright.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Copyright.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Copyright.Location = New System.Drawing.Point(524, 357)
-        Me.Copyright.Name = "Copyright"
-        Me.Copyright.Size = New System.Drawing.Size(241, 21)
-        Me.Copyright.TabIndex = 5
-        Me.Copyright.Text = "Copyright Todos los Derechos Reservados"
+        Me.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.pictureEdit1.EditValue = CType(resources.GetObject("pictureEdit1.EditValue"), Object)
+        Me.pictureEdit1.Location = New System.Drawing.Point(278, 266)
+        Me.pictureEdit1.Name = "pictureEdit1"
+        Me.pictureEdit1.Properties.AllowFocused = False
+        Me.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.pictureEdit1.Properties.Appearance.Options.UseBackColor = True
+        Me.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.pictureEdit1.Properties.ShowMenu = False
+        Me.pictureEdit1.Size = New System.Drawing.Size(160, 48)
+        Me.pictureEdit1.TabIndex = 13
         '
-        'Version
+        'labelControl2
         '
-        Me.Version.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Version.BackColor = System.Drawing.Color.Transparent
-        Me.Version.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Version.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Version.Location = New System.Drawing.Point(503, 266)
-        Me.Version.Name = "Version"
-        Me.Version.Size = New System.Drawing.Size(142, 22)
-        Me.Version.TabIndex = 4
-        Me.Version.Text = "Version {0}.{1:00}"
+        Me.labelControl2.Location = New System.Drawing.Point(23, 206)
+        Me.labelControl2.Name = "labelControl2"
+        Me.labelControl2.Size = New System.Drawing.Size(50, 13)
+        Me.labelControl2.TabIndex = 12
+        Me.labelControl2.Text = "Starting..."
         '
-        'Timer1
+        'labelControl1
         '
-        Me.Timer1.Enabled = True
+        Me.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.labelControl1.Location = New System.Drawing.Point(23, 286)
+        Me.labelControl1.Name = "labelControl1"
+        Me.labelControl1.Size = New System.Drawing.Size(115, 13)
+        Me.labelControl1.TabIndex = 11
+        Me.labelControl1.Text = "Copyright © 1998-2013"
         '
-        'SplashScreen1
+        'marqueeProgressBarControl1
+        '
+        Me.marqueeProgressBarControl1.EditValue = 0
+        Me.marqueeProgressBarControl1.Location = New System.Drawing.Point(23, 231)
+        Me.marqueeProgressBarControl1.Name = "marqueeProgressBarControl1"
+        Me.marqueeProgressBarControl1.Size = New System.Drawing.Size(404, 12)
+        Me.marqueeProgressBarControl1.TabIndex = 10
+        '
+        'SplashScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Control_de_archivo_de_docuementos.My.Resources.Resources.Logo_Archivero
-        Me.ClientSize = New System.Drawing.Size(771, 379)
-        Me.ControlBox = False
-        Me.Controls.Add(Me.ApplicationTitle)
-        Me.Controls.Add(Me.Copyright)
-        Me.Controls.Add(Me.Version)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
-        Me.Name = "SplashScreen1"
-        Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.ClientSize = New System.Drawing.Size(450, 320)
+        Me.Controls.Add(Me.pictureEdit2)
+        Me.Controls.Add(Me.pictureEdit1)
+        Me.Controls.Add(Me.labelControl2)
+        Me.Controls.Add(Me.labelControl1)
+        Me.Controls.Add(Me.marqueeProgressBarControl1)
+        Me.Name = "Form1"
+        Me.Text = "Form1"
+        CType(Me.pictureEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pictureEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.marqueeProgressBarControl1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents ApplicationTitle As Label
-    Friend WithEvents Copyright As Label
-    Friend WithEvents Version As Label
-    Friend WithEvents Timer1 As Timer
+    Private WithEvents pictureEdit2 As DevExpress.XtraEditors.PictureEdit
+    Private WithEvents pictureEdit1 As DevExpress.XtraEditors.PictureEdit
+    Private WithEvents labelControl2 As DevExpress.XtraEditors.LabelControl
+    Private WithEvents labelControl1 As DevExpress.XtraEditors.LabelControl
+    Private WithEvents marqueeProgressBarControl1 As DevExpress.XtraEditors.MarqueeProgressBarControl
 End Class
